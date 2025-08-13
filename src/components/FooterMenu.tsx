@@ -91,7 +91,21 @@ export const FooterMenu = ({ isVisible = true }: FooterMenuProps) => {
 
   const handleItemClick = (item: typeof menuItems[0]) => {
     setActiveItem(item.id);
-    setCurrentFunction(item.function);
+    
+    // Se for biblioteca, mostrar opções
+    if (item.id === 'biblioteca') {
+      // Criar um modal ou menu suspenso com as 3 opções da biblioteca
+      const bibliotecaOptions = [
+        'Biblioteca Jurídica',
+        'Livros Clássicos', 
+        'Biblioteca de Doutrinas'
+      ];
+      
+      // Por enquanto, usar a primeira opção como padrão
+      setCurrentFunction(bibliotecaOptions[0]);
+    } else {
+      setCurrentFunction(item.function);
+    }
   };
 
   // Desktop version

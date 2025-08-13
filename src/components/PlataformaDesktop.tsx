@@ -22,8 +22,8 @@ export const PlataformaDesktop = () => {
     toast
   } = useToast();
 
-  // Agora sempre mostra como premium required
-  const isPremiumUser = false;
+  // Removendo verificação premium - sempre libera o formulário
+  const isPremiumUser = true;
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {

@@ -51,13 +51,32 @@ export const ProductCarousel = () => {
         </p>
       </div>
       
-      {/* Carrossel de Imagens - Formato capa de livro, altura reduzida */}
-      <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+      {/* Carrossel de Imagens - Agora tocável */}
+      <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden group">
+        {/* Botões de navegação */}
+        <button
+          onClick={() => setCurrentIndex(prev => prev === 0 ? produtos.length - 1 : prev - 1)}
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-300"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        
+        <button
+          onClick={() => setCurrentIndex(prev => prev === produtos.length - 1 ? 0 : prev + 1)}
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-all duration-300"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
         <div className="flex h-full px-4 sm:px-6 gap-4 sm:gap-6">
           {produtos.map((produto, index) => (
             <div
               key={produto.id}
-              className={`flex-shrink-0 transition-all duration-1000 ease-in-out ${
+              className={`flex-shrink-0 transition-all duration-1000 ease-in-out cursor-pointer ${
                 index === currentIndex ? 'opacity-100 scale-100' : 'opacity-70 scale-95'
               }`}
               style={{
@@ -66,6 +85,7 @@ export const ProductCarousel = () => {
                 minWidth: '140px',
                 maxWidth: '180px'
               }}
+              onClick={() => setCurrentIndex(index)}
             >
               <div className="relative group h-full w-full max-w-[160px] mx-auto">
                 <img
