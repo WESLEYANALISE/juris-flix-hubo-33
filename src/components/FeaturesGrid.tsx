@@ -247,11 +247,11 @@ export const FeaturesGrid = () => {
         return <div key={categoryName} className="mb-12 animate-fade-in">
               {/* Título da categoria */}
               <div className="flex items-center gap-4 mb-6">
-                <div className="h-1 flex-1 bg-gradient-to-r from-red-professional/30 to-red-professional/60 rounded-full"></div>
-                <h3 className="text-xl sm:text-2xl font-bold text-red-professional px-4 py-2 rounded-lg bg-red-professional/10 border border-red-professional/20">
+                <div className="h-1 flex-1 bg-gradient-to-r from-slate-200/50 via-slate-300/70 to-slate-200/50 rounded-full"></div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-700 px-6 py-3 rounded-2xl bg-gradient-to-r from-white to-slate-50 border border-slate-200/60 shadow-lg shadow-slate-200/40">
                   {categoryName}
                 </h3>
-                <div className="h-1 flex-1 bg-gradient-to-r from-red-professional/60 to-red-professional/30 rounded-full"></div>
+                <div className="h-1 flex-1 bg-gradient-to-r from-slate-200/50 via-slate-300/70 to-slate-200/50 rounded-full"></div>
               </div>
 
               {/* Grid de funções da categoria */}
