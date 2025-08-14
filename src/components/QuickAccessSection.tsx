@@ -57,7 +57,7 @@ export const QuickAccessSection = () => {
           >
             {/* Círculo compacto com ícone - Sombras Profissionais */}
             <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-yellow-400 flex items-center justify-center transition-all duration-300 group-hover:bg-yellow-500 shadow-lg shadow-yellow-400/25 group-hover:shadow-xl group-hover:shadow-yellow-500/40">
-              <item.icon className="w-5 h-5 text-yellow-800 icon-hover-bounce" />
+              <item.icon className="w-5 h-5 text-black icon-hover-bounce" />
             </div>
             
             {/* Texto compacto abaixo */}
