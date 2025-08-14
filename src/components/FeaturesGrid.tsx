@@ -179,8 +179,8 @@ export const FeaturesGrid = () => {
                   className="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white p-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center">
-                      <Library className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-lg bg-yellow-500 flex items-center justify-center">
+                      <Library className="w-6 h-6 text-yellow-500" />
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-semibold">Biblioteca Jurídica</h3>
@@ -198,8 +198,8 @@ export const FeaturesGrid = () => {
                   className="group relative overflow-hidden bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white p-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center">
-                      <BookOpen className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-lg bg-yellow-500 flex items-center justify-center">
+                      <BookOpen className="w-6 h-6 text-yellow-500" />
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-semibold">Biblioteca de Clássicos</h3>
@@ -214,8 +214,8 @@ export const FeaturesGrid = () => {
                   className="group relative overflow-hidden bg-gradient-to-r from-purple-500 to-violet-600 hover:from-purple-600 hover:to-violet-700 text-white p-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center">
-                      <Brain className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-lg bg-yellow-500 flex items-center justify-center">
+                      <Brain className="w-6 h-6 text-yellow-500" />
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-semibold">Biblioteca de Habilidades Pessoais</h3>
@@ -265,8 +265,8 @@ export const FeaturesGrid = () => {
                         {/* Gradient background effect */}
                         <div className="absolute inset-0 bg-gradient-to-br from-red-professional/5 to-red-professional/10 group-hover:from-red-professional/10 group-hover:to-red-professional/20 transition-all duration-500 rounded-lg" />
                         
-                        <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-xl bg-red-500 flex items-center justify-center group-hover:scale-110 group-hover:bg-red-600 transition-all duration-500 relative shadow-lg shadow-red-500/25 group-hover:shadow-xl group-hover:shadow-red-500/40">
-                          <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-white transition-colors duration-300 icon-hover-bounce icon-float-gentle" />
+                        <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-xl bg-yellow-500 flex items-center justify-center group-hover:scale-110 group-hover:bg-yellow-600 transition-all duration-500 relative shadow-lg shadow-yellow-500/25 group-hover:shadow-xl group-hover:shadow-yellow-500/40">
+                          <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-500 transition-colors duration-300 icon-hover-bounce icon-float-gentle" />
                           
                           {/* Professional hover arrow */}
                           <div className="absolute -bottom-1 -right-1 w-4 h-4 sm:w-5 sm:h-5 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-0 group-hover:scale-100 shadow-lg">

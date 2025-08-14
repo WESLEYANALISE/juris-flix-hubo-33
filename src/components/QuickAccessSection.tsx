@@ -56,8 +56,8 @@ export const QuickAccessSection = () => {
             style={{ animationDelay: `${index * 100}ms` }}
           >
             {/* Círculo compacto com ícone - Sombras Profissionais */}
-            <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-red-500 flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 shadow-lg shadow-red-500/25 group-hover:shadow-xl group-hover:shadow-red-500/40">
-              <item.icon className="w-5 h-5 text-white icon-hover-bounce" />
+            <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-yellow-500 flex items-center justify-center transition-all duration-300 group-hover:bg-yellow-600 shadow-lg shadow-yellow-500/25 group-hover:shadow-xl group-hover:shadow-yellow-500/40">
+              <item.icon className="w-5 h-5 text-yellow-500 icon-hover-bounce" />
             </div>
             
             {/* Texto compacto abaixo */}
